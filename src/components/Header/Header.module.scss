@@ -1,0 +1,31 @@
+@import '../../sass/base';
+
+header{
+    @include flex(row, center, space-between);
+    // color: $button-color;
+    height: 80px;
+    padding: $default-padding;
+
+    h1 { margin: 0; }
+
+    ul{
+        @include flex(row, center, center);
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li{ 
+            margin: 0 2em; 
+            color: #000;
+            transition: ease 500ms;
+            font-weight: 400;
+
+            &:hover{
+                cursor: pointer;
+                color: $button-color;
+                border-bottom: solid 1px $button-color;
+            }
+        }
+
+    }
+}

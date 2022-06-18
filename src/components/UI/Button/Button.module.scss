@@ -1,0 +1,21 @@
+@import '../../../sass/base';
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $button-color;
+    border: none;
+    border-radius: 999px;
+    padding: .25em 1.5em;
+    height: 40px;
+    color: #fff;
+    transition: ease 500ms;
+
+    p{margin: 0 .5em;}
+
+    &:hover {
+        cursor: pointer;
+        background-color: $button-color-hover;
+    }
+}

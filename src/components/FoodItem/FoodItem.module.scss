@@ -1,0 +1,24 @@
+@import '../../sass/base';
+
+li{
+    width: 200px;
+    height: 100px;
+    background-color: #f43f;
+}
+
+.foodCard {
+    border-radius: 30px;
+    width: 225px;
+    height: 400px;
+    color: #fff;
+    background-color: $button-color-hover;
+    padding: 1em 2em;
+
+    div{
+        align-self: flex-end;
+        @include flex(column, flex-start, space-between);
+    }
+
+    h1 { font-size: 2em; }
+    h2 { font-size: 3em; }
+}
