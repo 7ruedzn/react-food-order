@@ -1,3 +1,4 @@
+import { FaBan, FaRemoveFormat } from 'react-icons/fa'
 import Button from '../Button/Button'
 import classes from './Modal.module.scss'
 
@@ -7,15 +8,13 @@ interface PropsTypes {
 }
 
 const Modal = (props: PropsTypes) => {
-    const CloseModal = () => {
-        props.closeModal()
-    }
+    const CloseModal = () => { props.closeModal() }
 
     return(
         <>
             <div className={classes.modal}>
                 <h1>{props.text}</h1>
-                <Button icon='' text='close' onClick={CloseModal}/>
+                <Button icon={<FaBan/>} text='close' onClick={CloseModal}/>
             </div>
             <div className={classes.backdrop}></div>
         </>

@@ -1,0 +1,13 @@
+@import '../../sass/base';
+
+.foodList{
+    @include flex(row, center, space-between);
+    width: 100%;
+    margin: 4rem 0;
+
+
+    .row{
+        display: block;
+        width: 100%;
+    }
+}

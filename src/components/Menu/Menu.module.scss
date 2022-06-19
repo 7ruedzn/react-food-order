@@ -1,0 +1,16 @@
+@import '../../sass/base';
+.menu {
+  @include flex(column, center, center);
+  padding: $default-padding;
+  margin: 4em 0;
+  text-align: center;
+  h3 {
+    color: #ff0000;
+    letter-spacing: 4px;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 3.5em;
+    margin: 0;
+  }
+}

@@ -1,24 +1,40 @@
 @import '../../sass/base';
 
-li{
-    width: 200px;
-    height: 100px;
-    background-color: #f43f;
-}
-
 .foodCard {
+    display: flex;
     border-radius: 30px;
-    width: 225px;
+    width: 200px;
     height: 400px;
     color: #fff;
     background-color: $button-color-hover;
     padding: 1em 2em;
+    transition: ease 500ms;
 
     div{
         align-self: flex-end;
         @include flex(column, flex-start, space-between);
     }
 
+    h1, h2 { margin: 0; }
     h1 { font-size: 2em; }
     h2 { font-size: 3em; }
+    span{ 
+        font-size: .5em;
+        color: rgb(255, 219, 56);
+    }
+    a{ 
+        @include flex-center();
+        color: #fff; 
+        text-decoration: none;
+        font-weight: bold;
+
+        p{
+            display: inline-block; 
+            margin: 0 .4em 0 0;
+        }
+    }
+
+    &:hover{
+        border-radius: 80px;
+    }
 }

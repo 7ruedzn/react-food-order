@@ -31,12 +31,20 @@ const Header = () => {
   return (
     <>
       {ReactDOM.createPortal(
-        <Modal text="carrinhooo" closeModal={closeCart} />,
+        <Modal text="Cart" closeModal={closeCart} />,
         document.getElementById("modals") as Element
       )}
-      <header>
+       <header>
         <h1>Vis a Vis</h1>
-        <Button icon="" text="See cart" onClick={showCart} />
+        <nav>
+          <ul>
+            <li>Why Fudo?</li>
+            <li>Services</li>
+            <li>Menu</li>
+            <li>About</li>
+          </ul>
+        </nav>
+        <Button icon={<FaCartPlus/>} text="See Cart" onClick={showCart} />
       </header>
     </>
   );

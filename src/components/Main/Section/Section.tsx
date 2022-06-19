@@ -2,7 +2,7 @@ import classes from './Section.module.scss'
 
 const Section = () => {
   return (
-    <section>
+    <section className={classes.mainSection}>
         <div className={classes.title}>
             <h1>Be the fastest in delivering your food</h1>
             <p>Our job is to filling your tummy with delicous food and with fast and free delivery.</p>

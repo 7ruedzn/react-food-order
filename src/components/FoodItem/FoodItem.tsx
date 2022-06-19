@@ -11,13 +11,18 @@ interface PropTypes {
 
 const FoodItem = (props: PropTypes) => {
   return (
-    <div className={classes.foodCard}>
+    <div className={classes.foodCard} 
+    style={
+      {backgroundImage: `url(${props.icon})`,
+       backgroundSize: 'cover',
+       backdropFilter: 'blur(5px)'
+       }}>
       <div className="">
         <h1>{props.name}</h1>
-        <h2>${props.price}</h2>
+        <h2><span>$</span>{props.price}</h2>
         <a href=''>
-          Order Now
-          <FaArrowRight /> 
+          <p>Order Now</p>
+          <FaArrowRight/> 
         </a>
       </div>
     </div>
